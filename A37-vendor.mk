@@ -60,6 +60,8 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/oppo/A37/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/oppo/A37/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd \
+    vendor/oppo/A37/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/oppo/A37/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/oppo/A37/proprietary/vendor/bin/psensord:$(TARGET_COPY_OUT_VENDOR)/bin/psensord \
     vendor/oppo/A37/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/oppo/A37/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
@@ -125,6 +127,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_v78s85.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_v78s85.so \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_v78s85_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_v78s85_camcorder.so \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_v78s85_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_v78s85_camera.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9718.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9718.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9718_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9718_camcorder.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9718_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9718_camera.so \
     vendor/oppo/A37/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/oppo/A37/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/oppo/A37/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
