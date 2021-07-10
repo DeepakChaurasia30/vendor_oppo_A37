@@ -1,0 +1,5 @@
+service vendor.qti_gnss_service /vendor/bin/hw/vendor.qti.gnss@1.0-service
+    interface vendor.qti.gnss@1.0::ILocHidlGnss gnss_vendor
+    class hal
+    user gps
+    group system gps radio
