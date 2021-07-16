@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
     vendor/oppo/A37/proprietary/lib/android.frameworks.sensorservice@1.0-v27.so:system/lib/android.frameworks.sensorservice@1.0-v27.so \
     vendor/oppo/A37/proprietary/lib/android.hardware.gnss@1.0-v27.so:system/lib/android.hardware.gnss@1.0-v27.so \
-    vendor/oppo/A37/proprietary/lib/libui.so:system/lib/libui.so \
     vendor/oppo/A37/proprietary/vendor/lib/hw/camera.vendor.msm8916.so:system/vendor/lib/hw/camera.vendor.msm8916.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmm-qcamera.so:system/vendor/lib/libmm-qcamera.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
