@@ -28,6 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/oppo/A37/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/oppo/A37/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/oppo/A37/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
+    vendor/oppo/A37/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
     vendor/oppo/A37/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
     vendor/oppo/A37/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/oppo/A37/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
