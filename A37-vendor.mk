@@ -28,8 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/oppo/A37/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/oppo/A37/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
-    vendor/oppo/A37/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
-    vendor/oppo/A37/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
     vendor/oppo/A37/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
     vendor/oppo/A37/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/oppo/A37/proprietary/vendor/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
@@ -65,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/bin/location_hal_test:system/vendor/bin/location_hal_test \
     vendor/oppo/A37/proprietary/vendor/bin/lowi-server:system/vendor/bin/lowi-server \
     vendor/oppo/A37/proprietary/vendor/bin/lowi_test:system/vendor/bin/lowi_test \
+    vendor/oppo/A37/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
     vendor/oppo/A37/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/oppo/A37/proprietary/vendor/bin/psensord:system/vendor/bin/psensord \
     vendor/oppo/A37/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
@@ -75,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:system/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/oppo/A37/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/oppo/A37/proprietary/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc \
+    vendor/oppo/A37/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
     vendor/oppo/A37/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oppo/A37/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
     vendor/oppo/A37/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:system/vendor/lib/com.quicinc.cne.constants@1.0.so \
@@ -132,6 +132,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/oppo/A37/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_15035.so:system/vendor/lib/libactuator_dw9714_15035.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_15035_camcorder.so:system/vendor/lib/libactuator_dw9714_15035_camcorder.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_15035_camera.so:system/vendor/lib/libactuator_dw9714_15035_camera.so \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_15399.so:system/vendor/lib/libactuator_dw9714_15399.so \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_15399_camcorder.so:system/vendor/lib/libactuator_dw9714_15399_camcorder.so \
     vendor/oppo/A37/proprietary/vendor/lib/libactuator_dw9714_15399_camera.so:system/vendor/lib/libactuator_dw9714_15399_camera.so \
@@ -179,6 +182,16 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_imx179_15399_snapshot.so:system/vendor/lib/libchromatix_imx179_15399_snapshot.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_imx179_15399_video_binning.so:system/vendor/lib/libchromatix_imx179_15399_video_binning.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_imx179_15399_video_hd.so:system/vendor/lib/libchromatix_imx179_15399_video_hd.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_common.so:system/vendor/lib/libchromatix_ov5648_15035_common.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_default_video.so:system/vendor/lib/libchromatix_ov5648_15035_default_video.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_15035_default_video_hd.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_preview.so:system/vendor/lib/libchromatix_ov5648_15035_preview.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_preview_cmcc.so:system/vendor/lib/libchromatix_ov5648_15035_preview_cmcc.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_preview_fb.so:system/vendor/lib/libchromatix_ov5648_15035_preview_fb.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_small_video.so:system/vendor/lib/libchromatix_ov5648_15035_small_video.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_snapshot.so:system/vendor/lib/libchromatix_ov5648_15035_snapshot.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_snapshot_fb.so:system/vendor/lib/libchromatix_ov5648_15035_snapshot_fb.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15035_zsl.so:system/vendor/lib/libchromatix_ov5648_15035_zsl.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15399_common.so:system/vendor/lib/libchromatix_ov5648_15399_common.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15399_default_video.so:system/vendor/lib/libchromatix_ov5648_15399_default_video.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15399_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_15399_default_video_hd.so \
@@ -189,6 +202,14 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15399_snapshot.so:system/vendor/lib/libchromatix_ov5648_15399_snapshot.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15399_snapshot_fb.so:system/vendor/lib/libchromatix_ov5648_15399_snapshot_fb.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_ov5648_15399_zsl.so:system/vendor/lib/libchromatix_ov5648_15399_zsl.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_common.so:system/vendor/lib/libchromatix_s5k3h7_15035_common.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_default_video.so:system/vendor/lib/libchromatix_s5k3h7_15035_default_video.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_preview.so:system/vendor/lib/libchromatix_s5k3h7_15035_preview.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_preview_cmcc.so:system/vendor/lib/libchromatix_s5k3h7_15035_preview_cmcc.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_small_video.so:system/vendor/lib/libchromatix_s5k3h7_15035_small_video.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_snapshot.so:system/vendor/lib/libchromatix_s5k3h7_15035_snapshot.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_snapshot_cmcc.so:system/vendor/lib/libchromatix_s5k3h7_15035_snapshot_cmcc.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15035_zsl_off.so:system/vendor/lib/libchromatix_s5k3h7_15035_zsl_off.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15399_common.so:system/vendor/lib/libchromatix_s5k3h7_15399_common.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15399_default_video.so:system/vendor/lib/libchromatix_s5k3h7_15399_default_video.so \
     vendor/oppo/A37/proprietary/vendor/lib/libchromatix_s5k3h7_15399_default_video_otp.so:system/vendor/lib/libchromatix_s5k3h7_15399_default_video_otp.so \
@@ -275,9 +296,11 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_imx179_15399.so:system/vendor/lib/libmmcamera_imx179_15399.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_omnivision_5648_eeprom.so:system/vendor/lib/libmmcamera_omnivision_5648_eeprom.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_ov5648_15035.so:system/vendor/lib/libmmcamera_ov5648_15035.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_ov5648_15399.so:system/vendor/lib/libmmcamera_ov5648_15399.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
+    vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_s5k3h7_15035.so:system/vendor/lib/libmmcamera_s5k3h7_15035.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_s5k3h7_15399.so:system/vendor/lib/libmmcamera_s5k3h7_15399.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_s5k3h7_8916.so:system/vendor/lib/libmmcamera_s5k3h7_8916.so \
     vendor/oppo/A37/proprietary/vendor/lib/libmmcamera_sony_imx179_eeprom.so:system/vendor/lib/libmmcamera_sony_imx179_eeprom.so \
